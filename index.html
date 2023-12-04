@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>URL Crawler</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH</h1>
+        <h1>ĐẠI HỌC BÁCH KHOA THÀNH PHỐ CHÍ MINH</h1>
+        <h2>KHOA KHOA HỌC VÀ KỸ THUẬT MÁY TÍNH</h2>
+        <img src="Images/Logo-DH-Bach-Khoa-HCMUT.webp" alt="BKU_Logo" class="centered-image">
+        <h3>MÔN HỌC: MẬT MÃ VÀ AN NINH MẠNG</h3>
+        <h3>BÀI TẬP LỚN: CRAWL DATA FROM A WEBSITE</h3>
+        <h1>URL Crawler</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button onclick="crawlData()">Crawl</button>
+        <div id="resultContainer"></div>
+        <h5>Lưu ý: Trang web này chỉ sử dụng cho mục đích học thuật</h5>
+
+        <h4>HƯỚNG DẪN SỬ DỤNG WEBSITE</h4>
+        <div class="guideline">
+            1. Truy cập website bất kỳ, copy đường link "URL" của website đó trên thanh địa chỉ <br>
+            2. Dán đường link vào phần "Enter URL" <br>
+            3. Nhấn "Crawl" để tiến hành quá trình <br>
+        </div>
+    </div>
+
+    <script>
+        function crawlData() {
+            var url = document.getElementById('urlInput').value;
+            var resultContainer = document.getElementById('resultContainer');
+            resultContainer.innerHTML = `<p>Crawling data from: ${url}</p>`;
+            // You can add more logic to handle crawling data
+        }
+    </script>
+
+</body>
+
+</html>
